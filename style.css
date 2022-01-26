@@ -1,0 +1,163 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+ 
+main {
+    margin-left: 50%;
+    margin-top: 50vh;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: hsl(216, 50%, 16%);
+    width: 250px;
+    height: 450px;
+    border-radius: 10px;
+
+    box-shadow: hsl(216, 54%, 10%) 0 5px 10px 10px;
+
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+    width: 90%;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: -1%;
+    font-weight: 600;
+}
+
+h1:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+h2 {
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 5%;
+}
+
+h3 {
+    color: hsl(178, 100%, 50%);
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+h4 {
+    color:hsl(215, 51%, 70%);
+    font-size: 12px;
+    margin-top: 0;
+}
+
+h5 {
+    color: hsl(215, 51%, 70%);
+    margin-left: 10px;
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+strong {
+    color: white;
+}
+
+strong:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.price {
+    float: left;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.time {
+    float: right;
+    width: 50%;
+}
+
+.equilibrium{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 7px;
+    z-index: 1;
+    position: relative;
+}
+
+.box {
+    margin: 5%;
+    width: 90%;
+    height: 50%;
+    z-index: -1;
+}
+
+
+.equilibrium:hover +.animation{
+    display: block;
+}
+
+.animation {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%,0);
+    z-index: 10;
+    position: absolute;
+}
+
+.animation:hover{
+    background-color: hsla(178,100%,50%,0.5);
+    cursor: pointer;
+}
+
+.animation:hover .view{
+    visibility: visible;
+}
+
+.view {
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: relative;
+    z-index: 3;
+    visibility: hidden;
+}
+
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.eth {
+    width: 10px;
+}
+
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    margin-left: 5%;
+    border: solid #888888 1px;
+    border-radius: 25px;
+}
+
